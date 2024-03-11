@@ -21,5 +21,5 @@ func main() {
 	e.GET("/chatws", handler.Make(handler.ChatWS))
 	e.DELETE("/thinking-message", handler.Make(handler.DeleteThinkingMessage))
 
-	e.Logger.Fatal(e.Start(":3000"))
+	e.Logger.Fatal(e.Start("0.0.0.0:3000"))
 }
