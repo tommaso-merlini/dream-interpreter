@@ -1992,6 +1992,11 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+html{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
