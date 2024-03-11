@@ -30,6 +30,7 @@ func main() {
 	e.GET("/chat", handler.Make(handler.ChatShow))
 	e.GET("/chatws", handler.Make(handler.ChatWS))
 	e.DELETE("/thinking-message", handler.Make(handler.DeleteThinkingMessage))
+	e.POST("/add-email", handler.Make(handler.AddEmail))
 
 	e.Logger.Fatal(e.Start("0.0.0.0:" + port))
 }

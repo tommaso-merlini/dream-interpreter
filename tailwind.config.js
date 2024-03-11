@@ -2,7 +2,7 @@
 module.exports = {
 	content: ["./view/**/*.templ}", "./**/*.templ"],
 	safelist: [],
-	plugins: [require("daisyui")],
+	plugins: [require("daisyui"), require('@tailwindcss/forms')],
 	daisyui: {
 		themes: ["synthwave"]
 	},

@@ -92,7 +92,7 @@ func Input(text string) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\" class=\"input input-bordered w-full\"> <button type=\"submit\" class=\"btn btn-accent\">Invia</button></div></form></div></div>")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\" class=\"input input-bordered w-full\"> <button type=\"submit\" class=\"btn btn-accent\">Send<i class=\"fa-solid fa-paper-plane\"></i></button></div></form></div></div>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
