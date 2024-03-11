@@ -1,0 +1,4 @@
+just run:
+```sh
+make
+```

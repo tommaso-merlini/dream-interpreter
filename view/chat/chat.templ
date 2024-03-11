@@ -1,0 +1,64 @@
+package chat 
+
+import "github.com/tommaso-merlini/dream-interpreter/view/layout"
+
+templ Chat() {
+	@layout.Base() {
+		@layout.NavBar()
+		<div hx-ext="ws" ws-connect="/chatws">
+			<div id="messages">
+				@Message("🌙 Hi! I'm the Dream Wizard, your guide to the mystical world of dreams! 🌟\n So, what have you dreamt of today? Share your visions, your adventures, your mysteries of the night. Together, let's unravel the enigmatic threads woven by your subconscious mind and discover the magic that lies within your dreams. Are you ready to embark on this journey of imagination with me? ✨🔮✨", false)
+			</div>
+			<div class="mb-36"></div>
+			@Input("")
+		</div>
+	}
+}
+
+templ Input(text string) {
+	<div hx-swap-oob="innerHTML:#input">
+		<div class="chat-input-container fixed bottom-0 left-0 w-full p-4 shadow-md bg-neutral" id="input">
+			<form ws-send>
+				<div class="flex items-center space-x-2">
+					<input type="text" name="chat_message" value={ text } class="input input-bordered w-full"/>
+					<button type="submit" class="btn btn-accent">Invia</button>
+				</div>
+			</form>
+		</div>
+	</div>
+}
+
+templ Message(msg string, isRight bool) {
+	<div hx-swap-oob="beforeend:#messages">
+		<div class={ getSide(isRight) }>
+			<!--
+			if !isRight {
+				<div hx-delete="/thinking-message" hx-target="#thinking-message" hx-trigger="load"></div>
+			}
+            -->
+			<div class={ getColor(isRight) }>{ msg }</div>
+		</div>
+	</div>
+}
+
+templ ThinkingMessage() {
+	<div hx-swap-oob="beforeend:#messages">
+		<div class="chat chat-start px-2" id="thinking-message">
+			<div class="p-4 rounded-2xl bg-primary text-black font-bold max-w-screen-md	 text-wrap break-words">The Wizard is thinking ...</div>
+		</div>
+	</div>
+}
+
+func getSide(isRight bool) string {
+	if isRight {
+		return "chat chat-end px-2"
+	}
+	return "chat chat-start px-2"
+}
+
+func getColor(isRight bool) string {
+	if !isRight {
+		return "p-4 rounded-2xl bg-primary text-black font-bold max-w-screen-md	 text-wrap break-words"
+	}
+	return "p-4 rounded-2xl bg-neutral font-bold max-w-52 text-wrap break-words max-w-screen-md"
+}
