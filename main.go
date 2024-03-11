@@ -3,7 +3,9 @@ package main
 import (
 	"embed"
 	"net/http"
+	"os"
 
+	"github.com/joho/godotenv"
 	"github.com/labstack/echo/v4"
 
 	"github.com/tommaso-merlini/dream-interpreter/handler"
@@ -13,6 +15,14 @@ import (
 var FS embed.FS
 
 func main() {
+	err := godotenv.Load(".env")
+	if err != nil {
+		panic(err)
+	}
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "3000"
+	}
 	e := echo.New()
 	e.GET("/*", echo.WrapHandler(http.StripPrefix("/", http.FileServer(http.FS(FS)))))
 	e.Static("/images", "./images")
@@ -21,5 +31,5 @@ func main() {
 	e.GET("/chatws", handler.Make(handler.ChatWS))
 	e.DELETE("/thinking-message", handler.Make(handler.DeleteThinkingMessage))
 
-	e.Logger.Fatal(e.Start("0.0.0.0:3000"))
+	e.Logger.Fatal(e.Start("0.0.0.0:" + port))
 }
