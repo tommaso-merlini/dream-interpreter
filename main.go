@@ -4,7 +4,6 @@ import (
 	"embed"
 	"net/http"
 	"os"
-	"time"
 
 	"github.com/joho/godotenv"
 	"github.com/labstack/echo/v4"
@@ -25,7 +24,7 @@ func main() {
 		port = "3000"
 	}
 	e := echo.New()
-	e.Use(handler.RateLimiterMiddleware(100, 24*time.Hour))
+	// e.Use(handler.RateLimiterMiddleware(100, 24*time.Hour))
 
 	e.GET("/*", echo.WrapHandler(http.StripPrefix("/", http.FileServer(http.FS(FS)))))
 	e.Static("/images", "./images")
