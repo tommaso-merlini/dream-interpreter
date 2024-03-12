@@ -28,6 +28,8 @@ func main() {
 
 	e.GET("/*", echo.WrapHandler(http.StripPrefix("/", http.FileServer(http.FS(FS)))))
 	e.Static("/images", "./images")
+	e.GET("/emails", handler.Make(handler.EmailDump))
+
 	e.GET("/", handler.Make(handler.HomeShow))
 	e.GET("/chat", handler.Make(handler.ChatShow))
 	e.GET("/chatws", handler.Make(handler.ChatWS))
