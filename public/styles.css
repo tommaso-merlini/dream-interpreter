@@ -1797,6 +1797,10 @@ select {
   margin-right: auto;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .mb-36 {
   margin-bottom: 9rem;
 }
