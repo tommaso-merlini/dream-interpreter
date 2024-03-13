@@ -36,7 +36,24 @@ func Home() templ.Component {
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
-			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(" <div class=\"relative isolate px-6 pt-14 lg:px-8\"><div class=\"absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80\" aria-hidden=\"true\"><div class=\"relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-primary to-secondary opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]\" style=\"clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)\"></div></div><div class=\"mx-auto max-w-2xl py-20 sm:py-28 lg:py-32\"><div class=\"text-center\"><h1 class=\"text-4xl font-extrabold tracking-tight text-white sm:text-6xl\">Your Personal Dream Interpreter</h1><p class=\"mt-6 text-lg leading-8 text-[#AFA8BA]\">personalized dream interpretations through cutting edge AI technology. It tailors insights to individual dream content, providing a more engaging and meaningful experience for users.</p><div class=\"mt-10 flex items-center justify-center gap-x-6\"><a href=\"/chat\" class=\"rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600\">Try for FREE</a> <a href=\"#\" class=\"text-sm font-semibold leading-6 text-white\">Learn more <span aria-hidden=\"true\">→</span></a></div></div></div><div class=\"absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]\" aria-hidden=\"true\"><div class=\"relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-primary to-secondary opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]\" style=\"clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)\"></div></div><div class=\"flex justify-center items-center mb-20\"><h2 class=\"text-3xl font-bold tracking-tight text-white sm:text-4xl mx-auto\">DreamWizard RoadMap</h2></div><ul class=\"steps w-full mb-56\"><li class=\"step step-primary font-bold\">MVP</li><li class=\"step font-bold\">Save Dreams</li><li class=\"step font-bold\">Dream Analytics</li><li class=\"step font-bold\">To the Moon!</li></ul><!--\n\t\t\t<div class=\"fixed bottom-6 right-6 z-50\">\n\t\t\t\t<a\n\t\t\t\t\thref=\"https://www.buymeacoffee.com/luhmerlo\"\n\t\t\t\t\ttarget=\"_blank\"\n\t\t\t\t\trel=\"noopener noreferrer\"\n\t\t\t\t\tclass=\"bg-accent text-black font-medium rounded-md px-4 py-2 flex items-center justify-center transition duration-300 ease-in-out\"\n\t\t\t\t>\n\t\t\t\t\t<span class=\"text-lg mr-2\">☕</span>\n\t\t\t\t\tBuy me a coffee\n\t\t\t\t</a>\n\t\t\t</div>\n            -->")
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(" <div class=\"relative isolate px-6 pt-14 lg:px-8\"><div class=\"absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80\" aria-hidden=\"true\"><div class=\"relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-primary to-secondary opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]\" style=\"clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)\"></div></div><div class=\"mx-auto max-w-2xl py-20 sm:py-28 lg:py-32\"><div class=\"text-center\"><h1 class=\"text-4xl font-extrabold tracking-tight text-white sm:text-6xl\">Your Personal Dream Interpreter</h1><p class=\"mt-6 text-lg leading-8 text-[#AFA8BA]\">personalized dream interpretations through cutting edge AI technology. It tailors insights to individual dream content, providing a more engaging and meaningful experience for users.</p><div class=\"mt-10 flex items-center justify-center gap-x-6\"><a href=\"/chat\" class=\"rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600\">Try for FREE</a> ")
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			templ_7745c5c3_Err = templ.RenderScriptItems(ctx, templ_7745c5c3_Buffer, copyTextToClipboard())
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<button class=\"text-sm font-semibold leading-6 text-white\" onclick=\"")
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			var templ_7745c5c3_Var3 templ.ComponentScript = copyTextToClipboard()
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ_7745c5c3_Var3.Call)
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\" hx-get=\"/copy-to-clipboard\">Copy to clipboard</button></div></div></div><div class=\"absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]\" aria-hidden=\"true\"><div class=\"relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-primary to-secondary opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]\" style=\"clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)\"></div></div><div class=\"flex justify-center items-center mb-20\"><h2 class=\"text-3xl font-bold tracking-tight text-white sm:text-4xl mx-auto\">DreamWizard RoadMap</h2></div><ul class=\"steps w-full mb-56\"><li class=\"step step-primary font-bold\">MVP</li><li class=\"step font-bold\">Save Dreams</li><li class=\"step font-bold\">Dream Analytics</li><li class=\"step font-bold\">To the Moon!</li></ul><!--\n\t\t\t<div class=\"fixed bottom-6 right-6 z-50\">\n\t\t\t\t<a\n\t\t\t\t\thref=\"https://www.buymeacoffee.com/luhmerlo\"\n\t\t\t\t\ttarget=\"_blank\"\n\t\t\t\t\trel=\"noopener noreferrer\"\n\t\t\t\t\tclass=\"bg-accent text-black font-medium rounded-md px-4 py-2 flex items-center justify-center transition duration-300 ease-in-out\"\n\t\t\t\t>\n\t\t\t\t\t<span class=\"text-lg mr-2\">☕</span>\n\t\t\t\t\tBuy me a coffee\n\t\t\t\t</a>\n\t\t\t</div>\n            -->")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
@@ -62,4 +79,15 @@ func Home() templ.Component {
 		}
 		return templ_7745c5c3_Err
 	})
+}
+
+func copyTextToClipboard() templ.ComponentScript {
+	return templ.ComponentScript{
+		Name: `__templ_copyTextToClipboard_04cc`,
+		Function: `function __templ_copyTextToClipboard_04cc(){console.log("copyTextToClipboard")
+  navigator.clipboard.writeText("https://dreamwizard.chat"); 
+}`,
+		Call:       templ.SafeScript(`__templ_copyTextToClipboard_04cc`),
+		CallInline: templ.SafeScriptInline(`__templ_copyTextToClipboard_04cc`),
+	}
 }

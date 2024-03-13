@@ -35,6 +35,7 @@ func main() {
 	e.GET("/chatws", handler.Make(handler.ChatWS))
 	e.DELETE("/thinking-message", handler.Make(handler.DeleteThinkingMessage))
 	e.POST("/add-email", handler.Make(handler.AddEmail))
+	e.GET("/copy-to-clipboard", handler.Make(handler.CopyToClipboard))
 
 	e.Logger.Fatal(e.Start("0.0.0.0:" + port))
 }
