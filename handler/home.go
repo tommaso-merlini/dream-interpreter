@@ -11,5 +11,5 @@ func HomeShow(c echo.Context) error {
 }
 
 func CopyToClipboard(c echo.Context) error {
-	return c.String(200, "Copied!")
+	return c.String(200, "Copied! now you can share it with your friends! :)")
 }
