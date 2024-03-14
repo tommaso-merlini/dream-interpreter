@@ -6,6 +6,8 @@ import (
 	"errors"
 	"io"
 	"net/http"
+
+	"github.com/kr/pretty"
 )
 
 type Response struct {
@@ -84,6 +86,7 @@ func GetMessage(history []map[string]string, input string) (string, error) {
 		return "", err
 	}
 	if len(response.Content) == 0 {
+		pretty.Println("empty response", response)
 		return "", errors.New("empty response")
 	}
 
