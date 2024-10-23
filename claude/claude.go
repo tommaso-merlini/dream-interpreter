@@ -38,7 +38,7 @@ func GetMessage(history []map[string]string, input string) (string, error) {
 	url := "https://api.anthropic.com/v1/messages"
 
 	// Use an environment variable for the API key, or replace os.Getenv("ANTHROPIC_API_KEY") with your actual key in quotes
-	apiKey := "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"
+	apiKey := ""
 
 	// Prepare the data for the request
 	data := map[string]interface{}{
